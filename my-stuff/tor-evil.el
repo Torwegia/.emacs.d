@@ -21,8 +21,7 @@
       evil-leader/in-all-states t)
 
 (evil-leader/set-key
-  "ff" 'helm-find-files
-  "cr" 'comment-or-uncomment-region)
+  "ff" 'helm-find-files)
 
 ;; Mode overrides
 (loop for (mode . state) in '((cider-stacktrace-mode . emacs)

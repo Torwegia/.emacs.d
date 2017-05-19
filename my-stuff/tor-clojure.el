@@ -7,4 +7,8 @@
 (package-require 'cider)
 (require 'cider)
 
+(evil-leader/set-key
+  "r" 'cider-switch-to-repl-buffer
+  "sn" 'cider-repl-set-ns)
+
 (provide 'tor-clojure)
