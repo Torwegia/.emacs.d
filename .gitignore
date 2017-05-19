@@ -3,3 +3,4 @@
 !.gitignore
 !init.el
 !my-stuff/*.el
+!LICENSE
