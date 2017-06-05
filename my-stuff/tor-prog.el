@@ -10,7 +10,8 @@
       irony
       ))
 (dolist (my-bullshit my-prog-modes)
-    (package-require my-bullshit))
+  (package-require my-bullshit)
+  (require my-bullshit))
 
 ;; Colors in prog modes
 (global-color-identifiers-mode t)

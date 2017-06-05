@@ -1,3 +1,4 @@
+
 (defun go-mode-setup()
   (go-eldoc-setup)
   (setq gofmt-command "goimports")

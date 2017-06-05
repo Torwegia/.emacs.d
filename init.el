@@ -65,6 +65,7 @@
 	tor-prog
         tor-c
 	tor-go
+	tor-rust
 	tor-python
 	tor-clojure
 	))
