@@ -7,7 +7,7 @@
 ;; Don't defer screen updates when performing operations
 (setq redisplay-dont-pause t)
 
-(package-require 'monokai-theme)
+(fetch-package 'monokai-theme)
 (load-theme 'monokai t)
 
 (provide 'looks)

@@ -4,9 +4,9 @@
 ;;  $ cargo install clippy
 ;;
 
-(package-require 'rust-mode)
-(package-require 'racer)
-(package-require 'flycheck-rust)
+(fetch-package 'rust-mode)
+(fetch-package 'racer)
+(fetch-package 'flycheck-rust)
 (require 'rust-mode)
 (require 'racer)
 (require 'flycheck-rust)

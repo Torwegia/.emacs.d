@@ -1,11 +1,11 @@
-(package-require 'evil)
-(package-require 'evil-leader)
-(package-require 'evil-surround)
+(fetch-package 'evil)
+(fetch-package 'evil-leader)
+(fetch-package 'evil-surround)
 (require 'evil)
 (require 'evil-leader)
 (require 'evil-surround)
 
-(package-require 'undo-tree)
+(fetch-package 'undo-tree)
 (require 'undo-tree)
 
 (setq evil-emacs-state-cursor '(box "red"))
@@ -22,10 +22,5 @@
 
 (evil-leader/set-key
   "ff" 'helm-find-files)
-
-;; Mode overrides
-(loop for (mode . state) in '((cider-stacktrace-mode . emacs)
-			      (cider-repl-mode . emacs))
-      do (evil-set-initial-state mode state))
 
 (provide 'tor-evil)

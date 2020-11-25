@@ -1,13 +1,12 @@
-(package-require 'helm)
-(package-require 'helm-projectile)
-(package-require 'projectile)
+(fetch-package 'helm)
+(fetch-package 'helm-projectile)
+(fetch-package 'projectile)
 
 (require 'projectile)
 (require 'helm-config)
 (require 'helm-files)
 (require 'helm-projectile)
 
-(diminish 'projectile-mode " P")
 (projectile-mode 1)
 
 (setq projectile-completion-system 'helm)
@@ -18,7 +17,6 @@
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 
-(diminish 'helm-mode " H")
 (helm-mode 1)
 
 (provide 'tor-project)
